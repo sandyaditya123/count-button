@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    min-height: 100vh;
+    background-color: #2a3124;
+}
+
+.count-btn,
+.reset-btn {
+    font-size: 3rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9px;
+    border: none;
+    outline: 2px solid #255f38;
+    cursor: pointer;
+    transition: all 75ms ease-out;
+    color: #97bd80;
+    background-color: #18230f;
+}
+
+.count-btn:active,
+.reset-btn:active {
+    color: #18230f;
+    background-color: #97bd80;
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .count-btn,
+    .reset-btn {
+        font-size: 2.5rem;
+    }
+}
